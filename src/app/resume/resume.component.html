@@ -1,0 +1,161 @@
+<div class="container text-center">
+    <button (click)="DownloadFile()" class="btn btn-primary mb-5 shadow border">Download PDF Resume</button>
+
+    <div class="pb-2"> 
+        <accordion [isAnimated]="true" class="shadow">
+            <accordion-group [(isOpen)]="isWorkExperienceOpen">
+                <button class="btn btn-block justify-content-between d-flex w-100" accordion-heading>
+                    <div style="visibility: hidden;"><b> >  </b></div>
+                    <div class="btn-link">Work Experience</div>
+
+                    <div style="width: 10.95px;">
+                        <div *ngIf="!isWorkExperienceOpen" style="color: white;"><b> > </b></div>
+                        <div *ngIf="isWorkExperienceOpen" style="color: white;"><b> v </b></div>
+                    </div>
+
+                    
+                </button>
+                <div style="text-align: left;">
+                    <h2 class="mb-0">Web Developer</h2>
+                    <h3 class="text-primary">Powerprint</h3>
+                    <ul>
+                        <li>
+                           WordPress website modification and design
+                        </li>
+                        <li>
+                            design advertising banners for the website
+                        </li>
+                        <li>
+                            assistance in website content creation
+                        </li>
+                        <li>
+                            Creating advertise videos for the company
+                        </li>
+                    </ul>
+                </div>
+                <hr>
+                <div style="text-align: left;">
+                    <h2 class="mb-0">web developement</h2>
+                    <h3 class="text-primary">Self employed</h3>
+                    <ul>
+                        <li>
+                            Car rental web app creation (Angular)
+                        </li>
+                    </ul>
+                </div>
+                <hr>
+                <div style="text-align: left;">
+                    <h2 class="mb-0">web developer</h2>
+                    <h3 class="text-primary">Sample Company</h3>
+                    <ul>
+                        <li>
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident hic ut animi repellendus, sint esse dolorum magni deleniti saepe, rerum minima rem sed accusamus voluptatibus voluptatum nesciunt tempore possimus aperiam.
+                        </li>
+                        <li>
+                            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Distinctio eos necessitatibus sunt fugiat. Consequuntur omnis ut dolorum unde illum aperiam autem inventore doloribus est quos odit, molestiae eos. Quasi, officiis!
+                        </li>
+                        <li>
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem magni animi fuga. Reiciendis vero illo natus quasi repudiandae tempore fugit quis officia blanditiis suscipit, omnis saepe repellendus veritatis sit quo.</li>
+                        <li>
+                            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quam, nostrum cumque nulla quis eligendi sunt, aliquid blanditiis cum, distinctio at officia ab ad dignissimos laborum mollitia accusantium vero tempore voluptate.
+                        </li>
+                        <li>
+                            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Atque, id obcaecati veritatis qui soluta aspernatur ut cupiditate reprehenderit natus, cumque doloribus nesciunt animi voluptates in fugiat quis expedita architecto illum.
+                        </li>
+                    </ul>
+                </div>
+            </accordion-group>
+            <accordion-group [(isOpen)]="isEducationOpen">
+                <button class="btn btn-block justify-content-between d-flex w-100" accordion-heading>
+                    <div style="visibility: hidden;">></div>
+                    <div class="btn-link">Education</div>
+
+                    <div style="width: 10.95px;">
+                        <div *ngIf="!isEducationOpen" style="color: white;">></div>
+                        <div *ngIf="isEducationOpen" style="color: white;">v</div>
+                    </div>
+
+                    
+                </button>
+                <div style="text-align: left;">
+                    <h2 class="mb-0">Bechelor's of Web developing in Information Technology</h2>
+                    <h3 class="text-primary">Higher Institute of Technological Studies Sidi Bouzid</h3>
+                    <ul>
+                        <li>
+                        Graduated from ISET Sidi Bouzid in June 2025
+                        </li>
+                        <li>
+                            Graduated with 14/20
+                        </li>
+                        <li>
+                            Participated in (Clubs)
+                        </li>
+                    </ul>
+                </div>
+            </accordion-group>
+            <accordion-group [(isOpen)]="isCertificationsOpen">
+                <button class="btn btn-block justify-content-between d-flex w-100" accordion-heading>
+                    <div style="visibility: hidden;">></div>
+                    <div class="btn-link">Certifications</div>
+
+                    <div style="width: 10.95px;">
+                        <div *ngIf="!isCertificationsOpen" style="color: white;">></div>
+                        <div *ngIf="isCertificationsOpen" style="color: white;">v</div>
+                    </div>
+
+                    
+                </button>
+                <div style="text-align: left;">
+                    <h3>TeamDoo Web developer certificate </h3>
+                    <ul>
+                        <li>Obtained February 2023</li>
+                    </ul>
+                </div>
+            </accordion-group>
+            <accordion-group [(isOpen)]="isSkillsOpen">
+                <button class="btn btn-block justify-content-between d-flex w-100" accordion-heading>
+                    <div style="visibility: hidden;">></div>
+                    <div class="btn-link">Skills</div>
+
+                    <div style="width: 10.95px;">
+                        <div *ngIf="!isSkillsOpen" style="color: white;">></div>
+                        <div *ngIf="isSkillsOpen" style="color: white;">v</div>
+                    </div>
+
+                    
+                </button>
+                <div class="row" style="text-align: left;">
+                    <div class="col">
+                        <h3>Programming Languages:</h3>
+                        <ul>
+                            <li>HTML/CSS</li>
+                            <li>Javascript/TypeScript</li>
+                            <li>Java</li>
+                            <li>PHP</li>
+                            <li>SQL</li>
+                        </ul>
+                    </div>
+                    <div class="col">
+                        <h3>Frameworks:</h3>
+                        <ul>
+                            <li>Angular</li>
+                            <li>Springboot</li>
+                            <li>Symfony</li>
+                            <li>Node.js</li>
+                            <li>Bootstrap</li>
+                        </ul>
+                    </div>
+                    <div class="col">
+                        <h3>Other Skills:</h3>
+                        <ul>
+                            <li>Source Controle via Git</li>
+                            <li>Problem Solving</li>
+                            <li>UI Design</li>
+                            <li>Team Player</li>
+                        </ul>
+                    </div>
+                </div>
+            </accordion-group>
+        </accordion>
+    </div>
+</div>

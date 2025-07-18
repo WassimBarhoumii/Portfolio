@@ -1,0 +1,32 @@
+<div class="container">
+    <div class="row">
+        <div class="col-lg shadow border m-3">
+            <div class="text-center">
+                <br>
+                <h2>About Me</h2>
+                <hr>
+                <img src="../../assets/profilephoto.jpg" alt="profile picture" width="256" height="256" class="rounded-circle">
+                <hr>
+                <p>
+                    Greetings! I'm an enthusiastic <b>Web Developer</b> based in Tunisia, deeply passionate about crafting innovative solutions and shaping a brighter future through coding. Join me as we embark on this exciting journey together, where collaboration and connection fuel our path to success. Let's unite our skills and creativity to make a meaningful impact in the world of web development.
+                </p>
+            </div>
+        </div>
+        <div class="col-lg shadow border m-3">
+            <div class="text-center">
+                <br>
+                <h2>Featured Project</h2>
+                <hr>
+                <h4>{{featuredProject.name}}</h4>
+            </div>
+
+            <carousel>
+                <div *ngFor="let picture of featuredProject.pictures">
+                    <slide><img src={{picture}} alt="slide" style="display: block; width: 100%;"></slide>
+                </div>
+            </carousel>
+            <p class="mt-2">{{featuredProject.summary}}</p>
+            <p>Visit the Portfolio section to learn more!</p>
+        </div>
+    </div>
+</div>
